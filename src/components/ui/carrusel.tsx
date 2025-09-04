@@ -3,7 +3,10 @@ import { SparklesIcon } from "lucide-react"
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { EffectCoverflow, Autoplay } from 'swiper/modules';
 // import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+
+// @ts-expect-error: Swiper CSS import is not typed, but required for styles
 import 'swiper/css';
+// @ts-expect-error: Swiper CSS import is not typed, but required for styles
 import "swiper/css/effect-coverflow"
 
 interface CarouselProps {
@@ -48,20 +51,18 @@ export const Carrusel: React.FC<CarouselProps> = ({
             <style>{css}</style>
             <div className="mx-auto w-full max-w-2xl rounded-[24px] border border-black/5 p-2 shadow-sm md:rounded-t-[44px]">
                 <div className="relative mx-auto flex w-full flex-col rounded-[24px] border border-black/5 bg-neutral-800/5 p-2 shadow-sm md:items-start md:gap-2 md:rounded-b-[20px] md:rounded-t-[40px] md:p-2">
-                    <div
-                        // variant="outline"
-                        className="absolute left-4 top-6 rounded-[14px] border border-black/10 text-base md:left-6"
-                    >
-                        <SparklesIcon className="fill-[#EEBDE0] stroke-1 text-neutral-800" />{" "}
+                    <div className="w-fit rounded-full border border-black/10 text-base flex px-2 gap-2">
+                        <SparklesIcon className="fill-[#EEBDE0] stroke-1 text-neutral-800" />
                         Latest component
                     </div>
-                    <div className="flex flex-col justify-center pb-2 pl-4 pt-14 md:items-center">
+                    <div className="flex flex-col justify-center py-2 pl-4 md:items-center">
                         <div className="flex gap-2">
                             <div>
                                 <h3 className="text-4xl opacity-85 font-bold tracking-tight">
-                                    Card Carousel
+                                    RXMode
                                 </h3>
-                                <p>Seamless Images carousel animation.</p>
+                                <p>App para la gestión de atletas con entrenos personalizados enfocada a Crossfit.</p>
+                                <p>A destacar el UX/UI, los tokens de invitación, el sistema de clasificación por puntuación.</p>
                             </div>
                         </div>
                     </div>
@@ -111,7 +112,7 @@ export const Carrusel: React.FC<CarouselProps> = ({
                             </Swiper>
                         </div>
                     </div>
-                    <div className="flex flex-wrap gap-2 mt-6 px-2">
+                    <div>
                         <span className="inline-flex items-center rounded-full bg-purple-100 px-3 py-1 text-sm font-medium text-purple-800">
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" className="w-4 h-4 mr-2" />
                             React
@@ -120,9 +121,9 @@ export const Carrusel: React.FC<CarouselProps> = ({
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" className="w-4 h-4 mr-2" />
                             TypeScript
                         </span>
-                        <span className="inline-flex items-center rounded-full bg-green-100 px-3 py-1 text-sm font-medium text-green-800">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swiper/swiper-original.svg" alt="Swiper" className="w-4 h-4 mr-2" />
-                            Swiper
+                        <span className="inline-flex items-center rounded-full bg-orange-100 px-3 py-1 text-sm font-medium text-orange-800">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" alt="Firebase" className="w-4 h-4 mr-2" />
+                            Firebase
                         </span>
                         <span className="inline-flex items-center rounded-full bg-yellow-100 px-3 py-1 text-sm font-medium text-yellow-800">
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" alt="Tailwind CSS" className="w-4 h-4 mr-2" />

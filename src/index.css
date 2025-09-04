@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'EuropaGrotesk';
+  src: url('./assets/fonts/europagroteskbold.otf') format('otf');
+  font-weight: 200 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Europa Grotesk SH DemBol";
+  src: url("https://db.onlinewebfonts.com/t/c37a9f31696dbcc8b86a42827beae565.eot");
+  src: url("https://db.onlinewebfonts.com/t/c37a9f31696dbcc8b86a42827beae565.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/c37a9f31696dbcc8b86a42827beae565.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/c37a9f31696dbcc8b86a42827beae565.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/c37a9f31696dbcc8b86a42827beae565.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/c37a9f31696dbcc8b86a42827beae565.svg#Europa Grotesk SH DemBol")format("svg");
+}
+
+:root {
+  font-family: "Europa Grotesk SH DemBol", system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@theme {
+  --color-primary: oklab(23.636% -0.00418 0.00843);
+  --color-secondary: #fcce9d;
+}

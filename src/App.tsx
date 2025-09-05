@@ -10,7 +10,6 @@ function App() {
     <>
       <Navbar />
       <Hero />
-
       <BasicExample />
       <MinimalCardDemo />
     </>

@@ -12,8 +12,6 @@ import "swiper/css/effect-coverflow"
 interface CarouselProps {
     images: { src: string; alt: string }[]
     autoplayDelay?: number
-    showPagination?: boolean
-    showNavigation?: boolean
 }
 
 export const Carrusel: React.FC<CarouselProps> = ({
@@ -73,7 +71,7 @@ export const Carrusel: React.FC<CarouselProps> = ({
                                 // install Swiper modules
                                 // modules={[Navigation, Pagination, Scrollbar, A11y]}
                                 modules={[EffectCoverflow, Autoplay]}
-                                spaceBetween={10}
+                                spaceBetween={30}
                                 slidesPerView={"auto"}
                                 autoplay={{
                                     delay: autoplayDelay,
@@ -95,13 +93,6 @@ export const Carrusel: React.FC<CarouselProps> = ({
                             // onSwiper={(swiper) => console.log(swiper)}
                             // onSlideChange={() => console.log('slide change')}
                             >
-                                {images.map((image, index) => (
-                                    <SwiperSlide key={index}>
-                                        <div className="size-full rounded-3xl">
-                                            <img src={image.src} alt={image.alt} className="rounded-lg w-full h-auto" />
-                                        </div>
-                                    </SwiperSlide>
-                                ))}
                                 {images.map((image, index) => (
                                     <SwiperSlide key={index}>
                                         <div className="size-full rounded-3xl">

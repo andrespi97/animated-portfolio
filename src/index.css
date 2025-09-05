@@ -1,8 +1,16 @@
 @import "tailwindcss";
 
 @font-face {
-  font-family: 'EuropaGrotesk';
+  font-family: 'Europa Grotesk SH Bol';
   src: url('./assets/fonts/europagroteskbold.otf') format('otf');
+  font-weight: 200 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url('./assets/fonts/SFPRODISPLAYREGULAR.OTF') format('otf');
   font-weight: 200 700;
   font-style: normal;
   font-display: swap;
@@ -30,4 +38,5 @@
 @theme {
   --color-primary: oklab(23.636% -0.00418 0.00843);
   --color-secondary: #fcce9d;
+  --font-display: 'SF Pro Display', system-ui, Avenir, Helvetica, Arial, sans-serif;
 }

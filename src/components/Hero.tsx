@@ -1,6 +1,6 @@
 // src/components/Hero.jsx
 import tuFoto from '../assets/images/yo.png'; // Asegúrate de tener una imagen tuya aquí
-import { WritingText } from './animate-ui/writing';
+import Scene from './animate-ui/Scene';
 import { MotionEffectFadeBlurDemo } from './FadeBlur';
 type LocationBadgeProps = {
   className?: string;
@@ -25,7 +25,7 @@ const LocationBadge = ({ className }: LocationBadgeProps) => {
 
 const Hero = () => {
   return (
-    <section id="sobre-mi" className="bg-gray-900 text-white min-h-full flex flex-col justify-center items-start text-center p-8 overflow-x-hidden">
+    <section id="sobre-mi" className=" text-white min-h-full flex flex-col justify-center items-start text-center p-8 overflow-x-hidden">
       <img src={tuFoto} alt="Tu foto" className="w-100 h-100 max-w-screen rounded-full mb-6 object-cover ml-auto" style={{ filter: "drop-shadow(0 0 3px rgba(0, 0, 0, 0.2))" }} />
       <MotionEffectFadeBlurDemo>
         <p className="text-4xl md:text-9xl font-semibold mb-2 text-start">

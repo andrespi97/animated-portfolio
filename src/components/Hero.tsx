@@ -1,6 +1,5 @@
 // src/components/Hero.jsx
 import tuFoto from '../assets/images/yo.png'; // Asegúrate de tener una imagen tuya aquí
-import Scene from './animate-ui/Scene';
 import { MotionEffectFadeBlurDemo } from './FadeBlur';
 type LocationBadgeProps = {
   className?: string;

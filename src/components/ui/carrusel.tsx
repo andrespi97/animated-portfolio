@@ -117,7 +117,7 @@ export const Carrusel: React.FC<CarouselProps> = ({
                             Firebase
                         </span>
                         <span className="inline-flex items-center rounded-full bg-yellow-100 px-3 py-1 text-sm font-medium text-yellow-800">
-                            <img src="https://w7.pngwing.com/pngs/293/485/png-transparent-tailwind-css-hd-logo-thumbnail.png" alt="Tailwind CSS" className="w-4 h-4 mr-2" />
+                            <img src="/src/assets/icons/tailwind.svg" alt="Tailwind CSS" className="w-4 h-4 mr-2" />
                             Tailwind CSS
                         </span>
                     </div>

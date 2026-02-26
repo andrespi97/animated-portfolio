@@ -16,7 +16,7 @@ const LocationBadge = ({ className }: LocationBadgeProps) => {
         ${className}
       `}
     >
-      <span role="img" aria-label="Bandera de España" ><img className='w-8 rounded-md' src="src\assets\images\spain.png" alt="Bandera de España" /></span>
+      <span role="img" aria-label="Bandera de España" ><img className='w-8 rounded-md' src="/src/assets/images/spain.png" alt="Bandera de España" /></span>
       <span>Located in Spain</span>
     </div>
   );

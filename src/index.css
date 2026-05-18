@@ -37,5 +37,11 @@
 @theme {
   --color-primary: oklab(23.636% -0.00418 0.00843);
   --color-secondary: #fcce9d;
+  --color-tertiary: #f6e9c7;
   --font-display: 'SF Pro Display', system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+body {
+  background-color: var(--color-primary);
+  color: var(--color-tertiary);
 }
